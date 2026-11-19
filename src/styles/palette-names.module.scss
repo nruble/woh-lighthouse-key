@@ -1,0 +1,10 @@
+@use "sass:map";
+@use "palettes-map" as *;
+
+:export {
+  names: #{map.keys($palettes)};
+
+  @each $key, $colors in $palettes {
+    #{$key}: #{map.get($colors, name)};
+  }
+}

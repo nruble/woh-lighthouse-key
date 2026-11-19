@@ -1,0 +1,113 @@
+{
+  "standard": {
+    "name": "World of Horror",
+    "notes": {
+      "other": [
+        "Default, with no special effects."
+      ]
+    }
+  },
+  "medical": {
+    "name": "Medical History",
+    "notes": {
+      "other": [
+        "Start with a DISCHARGE SUMMARY, which should be discarded for +20 EXPERIENCE.",
+        "Start with a MEDICAL KIT, which can either heal 1 Major Injury, or be USED to open it and gain 2 BANDAGES.",
+        "Any combat damage you receive has a chance to also cause a random INJURY."
+      ]
+    }
+  },
+  "hunted": {
+    "name": "Hunted by the Cult",
+    "notes": {
+      "other": [
+        "Completing mysteries reduces DOOM by an additional -1%.",
+        "You may encounter the unique enemies CULTIST HUNTER A and CULTIST HUNTER B."
+      ]
+    }
+  },
+  "seventh": {
+    "name": "The Seventh Curse",
+    "notes": {
+      "other": [
+        "Start with +4 FUNDS.",
+        "Cannot have HUMAN allies. Any recruited ally will be immediately removed along with a notification describing their death.",
+        "The HERMIT (if unlocked) is immune to this effect.",
+        "The possible [dog] allies from the TRAPPED DOG event are also immune."
+      ]
+    }
+  },
+  "illfated": {
+    "name": "Ill-Fated",
+    "notes": {
+      "other": [
+        "Start with 133 EXPERIENCE (except Juri, who only starts with 66 EXP).",
+        "All event skill check rolls are automatically set to 99, making them guaranteed failures.",
+        "Certain required mystery story events and lighthouse skill checks are the exception, and function normally."
+      ]
+    }
+  },
+  "knight": {
+    "name": "Knight-Errant",
+    "notes": {
+      "other": [
+        "Start with an INSPIRING NOVEL, which can be used once to grant +2 damage dealt until the mystery ends.",
+        "Completing a mystery with any ending other than ENDING A, will result in gaining +6% DOOM.",
+        "Timeline B settings make ENDING A of certain mysteries impossible to achieve."
+      ]
+    }
+  },
+  "scars": {
+    "name": "Scars",
+    "notes": {
+      "other": [
+        "Start with -3 MAX STAMINA and -3 MAX REASON.",
+        "Enemies deal -1 damage in combat."
+      ]
+    }
+  },
+  "birthmark": {
+    "name": "Curious Birthmark",
+    "notes": {
+      "other": [
+        "Start with an OLD COIN, which can be used once to remove a CURSE, including some unique personal status effects.",
+        "Any combat damage you receive has a chance to also inflict you with a random CURSE."
+      ]
+    }
+  },
+  "parasite": {
+    "name": "Eldritch Parasite",
+    "notes": {
+      "other": [
+        "Start with +20 MAX STAMINA and +20 MAX REASON.",
+        "You cannot recover or increase STAMINA or REASON in any way or amount. The value can only go down."
+      ]
+    }
+  },
+  "taste": {
+    "name": "Exquisite Taste",
+    "notes": {
+      "other": [
+        "Each location is limited to 1 additional action, such as shops.",
+        "Some of these services are irreplacable, so choose carefully."
+      ]
+    }
+  },
+  "fatalist": {
+    "name": "Fatalist",
+    "notes": {
+      "other": [
+        "Mysteries names are hidden while on the board before they are investigated.",
+        "You must complete mysteries in the order they are arranged on the board."
+      ]
+    }
+  },
+  "commoner": {
+    "name": "Commoner",
+    "notes": {
+      "other": [
+        "You cannot gain EXPERIENCE in any way or amount."
+      ]
+    }
+  }
+}

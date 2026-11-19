@@ -1,0 +1,221 @@
+{
+  "towering-eye": {
+    "name": "Ath-Yolazsth, the Towering Eye",
+    "shortname": "Ath-Yolazsth",
+    "notes": {
+      "startBonus": "Begin with 1 random spell.",
+      "rule": "Casting spells that would reduce REASON, instead increase DOOM.",
+      "events": [
+        {
+          "name": "Stargazing",
+          "choices": [
+            "Forced +3% DOOM."
+          ]
+        },
+        {
+          "name": "Towering Eye's Prophet",
+          "choices": [
+            "Forced -2 REASON, gain 1 random spell."
+          ]
+        }
+      ]
+    }
+  },
+  "spider-god": {
+    "name": "Cthac-Atorasu, the Spider God",
+    "shortname": "Cthac-Atorasu",
+    "notes": {
+      "rule": "The option to ESCAPE from combat is disabled.",
+      "events": [
+        {
+          "name": "Bitten",
+          "choices": [
+            "Forced injury BITE inflicted."
+          ]
+        },
+        {
+          "name": "Small Cocoon",
+          "choices": [
+            "Forced -2 REASON, randomly gain either [NICE RING], [PATINA RING] or [ROCK RING]."
+          ]
+        }
+      ]
+    }
+  },
+  "inconceivable-sadness": {
+    "name": "Eh-Żhal, the Inconceivable Sadness",
+    "shortname": "Eh-Żhal",
+    "notes": {
+      "rule": "The MISERY PARASITE status grows at the start of each mystery, gaining special conditions that will inflict DOOM at the end of mysteries.",
+      "ruledetaillist": [
+        "+2% DOOM for each SPELL you know.",
+        "+2% DOOM for each ALLY you have.",
+        "+DOOM equal to double your FUNDS.",
+        "+2% DOOM for each ITEM held, not equipped.",
+        "+1% DOOM for each INJURY you have.",
+        "+1% DOOM for each CURSE you have.",
+        "+1% DOOM for every 10 EXPERIENCE you have, rounded down."
+      ]
+    }
+  },
+  "thing-forsaken-by-god": {
+    "name": "Goizo, the Thing Forsaken by God",
+    "shortname": "Goizo",
+    "notes": {
+      "rule": "RESTING causes +2% additional DOOM compared to the base rate for your difficulty.",
+      "events": [
+        {
+          "name": "Agents of Goizo",
+          "choices": [
+            "Forced -1 REASON."
+          ]
+        },
+        {
+          "name": "Desperate Solution",
+          "choices": [
+            "Forced -2 STAMINA."
+          ]
+        },
+        {
+          "name": "Treacherous Reflection",
+          "choices": [
+            "Forced random CURSE inflicted."
+          ]
+        }
+      ]
+    }
+  },
+  "herald-of-the-shattered-court": {
+    "name": "Herald of the Shattered Court",
+    "shortname": "Herald",
+    "notes": {
+      "rule": "Completing a mystery triggers 1 additional Town Status.",
+      "events": [
+        {
+          "name": "The Trumpets of Shiokawa",
+          "choices": [
+            "PREPARE: +3% DOOM.",
+            "FIGHT: -1% DOOM gain a random INJURY."
+          ]
+        },
+        {
+          "name": "Cheerleading Routine",
+          "choices": [
+            "Forced -1 REASON, -1 STAMINA."
+          ]
+        }
+      ]
+    }
+  },
+  "devouring-flame": {
+    "name": "Ithotu, the Devouring Flame",
+    "shortname": "Ithotu",
+    "notes": {
+      "rule": "Both you and enemies deal +1 additional combat damage.",
+      "events": [
+        {
+          "name": "Scorching Sun",
+          "choices": [
+            "Forced -2 STAMINA."
+          ]
+        },
+        {
+          "name": "Pillar of Flame",
+          "choices": [
+            "DEXTERITY check: Gain the SPELL Ithotu Flame on success, +2% DOOM on failure."
+          ]
+        },
+        {
+          "name": "Upcoming Exhibition",
+          "choices": [
+            "Forced +10 EXPERIENCE, +3% DOOM."
+          ]
+        }
+      ]
+    }
+  },
+  "dreaming": {
+    "name": "Ktu-Rufu, the Dreaming",
+    "shortname": "Ktu-Rufu",
+    "notes": {
+      "rule": "Gain +1% DOOM for every 2 REASON lost, rounded up, and a status to lose an additional -2% DOOM at the end of a mystery.",
+      "events": [
+        {
+          "name": "Bad Dreams",
+          "choices": [
+            "GIVE IN: +1 STAMINA, -3 REASON.",
+            "YOU CAN'T: Gain the INSOMNIA status."
+          ]
+        },
+        {
+          "name": "Crumbling Reality",
+          "choices": [
+            "CHANTING: +10 EXPERIENCE, +2% DOOM.",
+            "DEVOURED: +3 EXPERIENCE, enter random OTHERWORLD location.",
+            "FIGHT IT: PERCEPTION check: Gain +4 REASON on success, -2 STAMINA on failure."
+          ]
+        }
+      ]
+    }
+  },
+  "irresistible-gaze": {
+    "name": "Ygothaeg, the Irresistible Gaze",
+    "shortname": "Ygothaeg",
+    "notes": {
+      "rule": "Each turn 2-3 locations are forbidden; INVESTIGATING there causes an additional +2% DOOM. [Don't Blink] incurs no penalty.",
+      "events": [
+        {
+          "name": "Irresistible Clouds",
+          "choices": [
+            "Forced +2% DOOM."
+          ]
+        },
+        {
+          "name": "People Under the Waves",
+          "choices": [
+            "Forced -2 REASON, -2% DOOM."
+          ]
+        },
+        {
+          "name": "Break the Gaze",
+          "choices": [
+            "Forced -2 STAMINA, -2% DOOM."
+          ]
+        }
+      ]
+    }
+  },
+  "horror-from-the-stars": {
+    "name": "Zhectast, The Horror from the Stars",
+    "shortname": "Zhectast",
+    "notes": {
+      "rule": "Permanently lose -1 to all stats for every 21% of DOOM reached for the first time.",
+      "events": [
+        {
+          "name": "The Perfect Form (A)",
+          "choices": [
+            "Forced +3 PERCEPTION, -2 REASON."
+          ]
+        },
+        {
+          "name": "The Perfect Form (B)",
+          "choices": [
+            "Forced +3 STRENGTH, -1 REASON."
+          ]
+        },
+        {
+          "name": "The Perfect Form (C)",
+          "choices": [
+            "Forced +3 DEXTERITY, -2 STAMINA."
+          ]
+        },
+        {
+          "name": "The Perfect Form (D)",
+          "choices": [
+            "Forced +3 CHARISMA, -1 STAMINA."
+          ]
+        }
+      ]
+    }
+  }
+}

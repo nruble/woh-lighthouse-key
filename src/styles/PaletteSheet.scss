@@ -1,0 +1,161 @@
+.palette-sheet-overlay {
+  z-index: 1;
+  .palette-sheet-backdrop {
+    background-color: theme-color(dark);
+    -webkit-mask: url('../assets/shading/gridshade_tight@3x.png') 1px 1px / 24px 24px repeat;
+    mask: url('../assets/shading/gridshade_tight@3x.png') 1px 1px / 24px 24px repeat;
+    image-rendering: pixelated;
+  }
+  .palette-sheet-modal {
+    background-color: theme-color(light);
+    min-height: 50vh;
+    max-height: 80vh;
+    min-width:300px;
+    width:90vw;
+    max-width:800px;
+    border:2px solid theme-color(dark);
+    border-bottom: none;
+    padding:16px 8px 0;
+    filter: 
+      drop-shadow(0 -2px 0 theme-color(light))
+      drop-shadow(0 2px 0 theme-color(light))
+      drop-shadow(-2px 0 0 theme-color(light))
+      drop-shadow(2px 0 0 theme-color(light))
+      ;
+    .palette-sheet-content {
+      overflow: auto;
+      padding-inline:8px;
+      box-sizing: border-box;
+      .palette-warning {
+        font-size:14px;
+        position: sticky;
+        top:0;
+        z-index: 2;
+        background-color: theme-color(light);
+        margin:0 0 16px;
+        padding-block:0 12px;
+        border-bottom:2px solid theme-color(dark);
+      }
+      .palette-button-group {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:10px;
+        padding-bottom:18px;
+        @media screen and (max-width:660px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .palette-button {
+          background-color:theme-color(light);
+          color:theme-color(dark);
+          border:2px solid theme-color(dark);
+          border-bottom-width: 4px;
+          border-radius: 6px;
+          overflow: hidden;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding:6px;
+          cursor: pointer;
+          height:66px;
+          position: relative;
+          @media screen and (max-width:520px) {
+            height:auto;
+          }
+          &:before {
+            content:'';
+            position:absolute;
+            height:100%;
+            width:100%;
+            inset:0;
+            background-color:transparent;
+            image-rendering: pixelated;
+            z-index: 0;
+          }
+          &:hover {
+            &:before {
+              background-color:theme-color(dark);
+              -webkit-mask: url('../assets/shading/gridshade_loose@3x.png') 2px 0 / 24px 24px repeat;
+              mask: url('../assets/shading/gridshade_loose@3x.png') 2px 0 / 24px 24px repeat;
+            }
+          }
+          &:active, &.active {
+            border-bottom-width:2px;
+            top:2px;
+            &:before {
+              background-color:theme-color(dark);
+              -webkit-mask: 
+                url('../assets/shading/gridshade_tight@3x.png') 0 0 / 24px 24px repeat;
+              mask: 
+                url('../assets/shading/gridshade_tight@3x.png') 0 0 / 24px 24px repeat;
+            }
+          }
+          
+          .palette-button-swatch {
+            z-index: 1;
+            border:4px solid theme-color(dark);
+            border-left-color: theme-color(shade);
+            border-top-color: theme-color(accent);
+            border-right-color: theme-color(light);
+            border-radius:4px;
+            display:grid;
+            grid-template-columns: repeat(2, 20px);
+            grid-auto-rows: 20px;
+            filter: 
+              drop-shadow(0 -2px 0 theme-color(light))
+              drop-shadow(0 2px 0 theme-color(light))
+              drop-shadow(-2px 0 0 theme-color(light))
+              drop-shadow(2px 0 0 theme-color(light))
+              ;
+            @media screen and (max-width:520px) {
+              grid-template-columns: repeat(2, 14px);
+              grid-auto-rows: 14px;
+            }
+            .palette-button-swatch-1, .palette-button-swatch-2, .palette-button-swatch-3, .palette-button-swatch-4 {
+              display:block;
+              width:20px;
+              height:20px;
+              @media screen and (max-width:520px) {
+                width:14px;
+                height:14px;
+              }
+            }
+            .palette-button-swatch-1 {
+              background-color: theme-color(dark);
+            }
+            .palette-button-swatch-2 {
+              background-color: theme-color(shade);
+            }
+            .palette-button-swatch-3 {
+              background-color: theme-color(accent);
+            }
+            .palette-button-swatch-4 {
+              background-color: theme-color(light);
+            }
+          }
+          .palette-button-names {
+            margin-left:12px;
+            display: flex;
+            flex-direction: column;
+            gap:2px;
+            z-index: 1;
+            pointer-events: none;
+            .palette-button-names-theme, .palette-button-names-safety {
+              font-size:14px;
+              line-height:1;
+              padding: 4px;
+              margin: 0;
+              color:theme-color(dark);
+              background-color: theme-color(light);
+            }
+            @media screen and (max-width:520px) {
+              .palette-button-names-theme, .palette-button-names-safety {
+                font-size:12px;
+                letter-spacing: 0.015rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@use "sass:map";
+@use "palettes-map" as *;
+
+$default-palette: standard;
+
+:root {
+  @each $role, $value in map.get($palettes, $default-palette) {
+    @if $role != name {
+      --color-#{$role}: #{$value};
+    }
+  }
+}
+
+@each $palette-name, $colors in $palettes {
+  [data-theme="#{$palette-name}"] {
+    @each $role, $value in $colors {
+      @if $role != name {
+        --color-#{$role}: #{$value};
+      }
+    }
+  }
+}

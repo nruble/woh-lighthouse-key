@@ -1,0 +1,172 @@
+{
+  "kirie": {
+    "name": "Kirie Minami",
+    "notes": {
+      "startBonus": "Begins with 1 random spell.",
+      "uniqueStatus": "",
+      "prepItem": "[KIRIE'S BAG] While held, alters the action of Forgetting a Spell to lose net 0-1 REASON, gain 1% DOOM, and gain a new random spell.",
+      "other": [
+        "The SELF-THERAPY perk increases REASON gained by forgetting spells, shifting BAG usage to gaining 0-1 REASON rather than losing any.", 
+        "The spell BRAIN WORMS does not trigger KIRIE'S BAG, serving as a dead end when cycling through random spells."
+      ]
+    }
+  },
+  "aiko": {
+    "name": "Aiko Takahashi",
+    "notes": {
+      "startBonus": "Has an innate +10% bonus to Offensive combat action speed.",
+      "uniqueStatus": "",
+      "prepItem": "[AIKO'S PLUSH TOY] While equipped, Perception and Luck stats temporarily receive -2, and you receive -1 incoming damage.",
+      "other": [
+        "Can gain an additional +15% bonus to Offensive action speed with the FAST SWIMMER perk."
+      ]
+    }
+  },
+  "haru": {
+    "name": "Haru",
+    "notes": {
+      "startBonus": "Begins with CIGARETTES, and the mental curse NICOTINE WITHDRAWAL.",
+      "uniqueStatus": "Gains +1 to outgoing damage while under the NICOTINE RUSH effect.",
+      "prepItem": "[CIGARETTE CASE] While held, every investigated location has a 15% chance to add 1 cigarette to the cigarette counter.",
+      "other": []
+    }
+  },
+  "mizuki": {
+    "name": "Mizuki Hamasaki",
+    "notes": {
+      "startBonus": "Begins with 1 random ally.",
+      "uniqueStatus": "Requires at least 2 allies present at the end of each mystery, otherwise -2 REASON.",
+      "prepItem": "[VANITY MIRROR] While equipped or held, event choice skill checks are revealed.",
+      "other": []
+    }
+  },
+  "kouji": {
+    "name": "Kouji Tagawa",
+    "notes": {
+      "startBonus": "Begins with a CAMERA.",
+      "uniqueStatus": "",
+      "prepItem": "[FILM ROLL] Reusable item that can exchange -1 FUNDS for +10 EXPERIENCE.",
+      "other": []
+    }
+  },
+  "mimi": {
+    "name": "Mimi",
+    "notes": {
+      "startBonus": "Begins with a SCALPEL.",
+      "uniqueStatus": "-20% MAX REASON applied to what the full amount should be, impacting upgrades as well as starting total.",
+      "prepItem": "[ANATOMY BOOK] Reusable item that can exchange -2 STAMINA for +8 EXPERIENCE, even if the STAMINA loss will kill you.",
+      "other": []
+    }
+  },
+  "miku": {
+    "name": "Miku",
+    "notes": {
+      "startBonus": "",
+      "uniqueStatus": "Permanently gains +1 to all stats for every 20% of DOOM reached for the first time.",
+      "prepItem": "[GUITAR] While held, RESTING at home grants an additional +1 REASON and +1% DOOM.",
+      "other": []
+    }
+  },
+  "moriko": {
+    "name": "Moriko Ishii",
+    "notes": {
+      "startBonus": "Begins with the OLD SHOTGUN.",
+      "uniqueStatus": "",
+      "prepItem": "[BLESSED SHELL] Single use while in combat grants +1 AMMO, +5% DOOM, and +10 damage with the SHOOT action until the end of the current combat.",
+      "other": []
+    }
+  },
+  "yashiro": {
+    "name": "Yashiro Kawaji",
+    "notes": {
+      "startBonus": "Begins with the BRONZE CRUCIFIX.",
+      "uniqueStatus": "Ominous Letter status raises the EXPERIENCE requirement to 120, and offers action to exchange -4 REASON for +3 FAITH, or -2 STAMINA for -3 FAITH.",
+      "prepItem": "[MARKED BIBLE] While held, RESTING at home will grant an extra +1 REASON if FAITH is at or above 1, or +1 STAMINA if FAITH is at or below 0.",
+      "other": [
+        "The unique FAITH stat increases by defeating enemies and solving mysteries, and is lowered equal to damage received in combat.",
+        "Higher FAITH grants additional EXP, MAX STAMINA, and MAX REASON from mystery completion, while negative FAITH values will cause a loss of each instead."
+      ]
+    }
+  },
+  "ayaka": {
+    "name": "Ayaka Kuroi",
+    "notes": {
+      "startBonus": "Begins with the ONYX MEDALLION, which cannot be removed.",
+      "uniqueStatus": "Inflicted with +2 CURSES each mystery, but can use the MEDALLION to cure 1 CURSE per mystery.",
+      "prepItem": "[AYAKA'S CHALK] While equipped, grants +2 damage against GHOSTS.",
+      "other": []
+    }
+  },
+  "toshiaki": {
+    "name": "Toshiaki Wakamatsu",
+    "notes": {
+      "startBonus": "Begins with the NECRONOMICON.",
+      "uniqueStatus": "",
+      "prepItem": "[BOOK STRAP] While equipped, grants +10% combat action speed for each Book held in your inventory.",
+      "other": []
+    }
+  },
+  "juri": {
+    "name": "Juri Okusawa",
+    "notes": {
+      "startBonus": "",
+      "uniqueStatus": "Leveling up costs 50 less EXPERIENCE, but you are pursued by HORROR in an ACTIVE RITUAL.",
+      "prepItem": "[CHECK BOOK] Reusable item that exchanges +3% DOOM for +5 FUNDS.",
+      "other": [
+        "The HORROR meter increases at twice the rate of your DOOM increases, and is not lowered by DOOM reduction.",
+        "When HORROR catches up at 100%, EXPERIENCE is locked preventing you from gaining more levels.",
+        "HORROR is lowered by 10% for completing a mystery.",
+        "Obtaining the PREPARE item and using it once results in 16% HORROR progression."
+      ]
+    }
+  },
+  "yumiko": {
+    "name": "Yumiko Ichimura",
+    "notes": {
+      "startBonus": "Begins with the LUCKY BAT, and the minor injury CONCUSSION.",
+      "uniqueStatus": "",
+      "prepItem": "[BASEBALL] Used in combat, the enemy's POWER is reduced to 0.",
+      "other": []
+    }
+  },
+  "kiriko": {
+    "name": "Kiriko Yoshiya",
+    "notes": {
+      "startBonus": "Begins with a [TAROT DECK].",
+      "uniqueStatus": "",
+      "prepItem": "",
+      "other": [
+        "Futher details of TAROT DECK etc, pending."
+      ]
+    }
+  },
+  "satoshi": {
+    "name": "Satoshi Muramatsu",
+    "notes": {
+      "startBonus": "",
+      "uniqueStatus": "Receives -1 damage from EVENT outcomes, down to a minimum of 1.",
+      "prepItem": "No custom item: Randomly obtains either a [BANDAGE], [ENERGY DRINK], or [WOODEN BAT].",
+      "other": []
+    }
+  },
+  "makoto": {
+    "name": "Makoto Yamauchi",
+    "notes": {
+      "startBonus": "",
+      "uniqueStatus": "Details of unique perk MEAT PUPPET pending.",
+      "prepItem": "",
+      "other": []
+    }
+  },
+  "kana": {
+    "name": "Kana",
+    "notes": {
+      "startBonus": "Begins with a SOFT DRINK.",
+      "uniqueStatus": "MAX STAMINA and MAX REASON are capped at 8. When either stat reaches 0, instead of dying the stat is reset to 8 and you gain +5% DOOM.",
+      "prepItem": "No custom item: Randomly obtains either a [BANDAGE], [ENERGY DRINK], or [WOODEN BAT].",
+      "other": [
+        "The first time STAMINA or REASON reaches 0, gain an additional unique status which tracks the number of death's cheated."
+      ]
+    }
+  }
+}

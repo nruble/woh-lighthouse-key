@@ -1,0 +1,56 @@
+[
+  {
+    "name": "memento",
+    "description": "a polaroid photo with the image crossed out",
+    "iconUrl": "/glyphs/doorglyph_memento@2x.png",
+    "type": "memory"
+  },
+  {
+    "name": "choice",
+    "description": "bidirectional arrow with up marked positive and down negative",
+    "iconUrl": "/glyphs/doorglyph_choice@2x.png",
+    "type": "memory"
+  },
+  {
+    "name": "sigil",
+    "description": "fictional occult mark, similar to a downward magnifying glass with a up-curved hilt",
+    "iconUrl": "/glyphs/doorglyph_sigil@2x.png",
+    "type": "fight"
+  },
+  {
+    "name": "formula",
+    "description": "equation centered on the alchemical symbol for the earth element",
+    "iconUrl": "/glyphs/doorglyph_formula@2x.png",
+    "type": "skill"
+  },
+  {
+    "name": "blades",
+    "description": "3 downward crossing knives with circular handles",
+    "iconUrl": "/glyphs/doorglyph_blade@2x.png",
+    "type": "skill"
+  },
+  {
+    "name": "snare",
+    "description": "circle bisected by a line or the letter I, similar to the lowercase Ancient Greek Phi",
+    "iconUrl": "/glyphs/doorglyph_snare@2x.png",
+    "type": "skill"
+  },
+  {
+    "name": "ward",
+    "description": "left hand open with an eye in the palm, similar to a hamsa",
+    "iconUrl": "/glyphs/doorglyph_ward@2x.png",
+    "type": "skill"
+  },
+  {
+    "name": "tribute",
+    "description": "an arrowhead or dagger-like shape pointed at a heart symbol",
+    "iconUrl": "/glyphs/doorglyph_tribute@2x.png",
+    "type": "skill"
+  },
+  {
+    "name": "shroud",
+    "description": "flawed alchemical symbol for aqua regia, like a V and R merged",
+    "iconUrl": "/glyphs/doorglyph_shroud@2x.png",
+    "type": "item"
+  }
+]

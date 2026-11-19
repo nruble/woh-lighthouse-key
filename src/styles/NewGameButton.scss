@@ -1,0 +1,67 @@
+.new-game-container {
+  z-index: 0;
+  width: 100%;
+  @media screen and (min-width:661px) {
+    display:none;
+  }
+  .mobile-reset-newgame-button {
+    font-family: 'DM Sans', sans-serif;
+    display: block;
+    margin:0 auto;
+    color: theme-color(dark);
+    border:2px solid theme-color(dark);
+    border-bottom-width: 4px;
+    border-radius: 6px;
+    font-size:22px;
+    line-height: 1;
+    image-rendering: pixelated;
+    padding:10px 44px;
+    position: relative;
+    background-color: theme-color(light);
+    background-color: theme-color(shade);
+    filter: 
+      drop-shadow(0 -2px 0 theme-color(light))
+      drop-shadow(0 2px 0 theme-color(light))
+      drop-shadow(-2px 0 0 theme-color(light))
+      drop-shadow(2px 0 0 theme-color(light))
+    ;
+    &:before {
+      content:'';
+      position:absolute;
+      height:100%;
+      width:100%;
+      inset:0;
+      image-rendering: pixelated;
+      z-index: 0;
+    }
+    &:hover {
+      cursor: pointer;
+      &:before {
+        background-color:theme-color(dark);
+        -webkit-mask: url('../assets/shading/gridshade_loose@3x.png') 2px 0 / 24px 24px repeat;
+        mask: url('../assets/shading/gridshade_loose@3x.png') 2px 0 / 24px 24px repeat;
+      }
+    }
+    &:active {
+      border-bottom-width: 2px;
+      top:2px;
+      &:before {
+        background-color:theme-color(dark);
+        -webkit-mask: 
+          url('../assets/shading/gridshade_loose@3x.png') 2px 0 / 24px 24px repeat,
+          url('../assets/shading/gridshade_tight@3x.png') 0 0 / 24px 24px repeat;
+        mask: 
+          url('../assets/shading/gridshade_loose@3x.png') 2px 0 / 24px 24px repeat,
+          url('../assets/shading/gridshade_tight@3x.png') 0 0 / 24px 24px repeat;
+      }
+    }
+    span {
+      position: relative;
+      background-color: theme-color(light);
+      z-index: 1;
+      line-height: 1;
+      padding:0 2px;
+      display: block;
+    }
+  }
+}

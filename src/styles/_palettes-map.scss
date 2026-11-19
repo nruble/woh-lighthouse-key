@@ -1,0 +1,562 @@
+$palettes: (
+  standard: (
+    name: "Standard",
+    dark: #000000,
+    shade: #808080,
+    accent: #C0C0C0,
+    light: #FFFFFF
+  ),
+  abyssal: (
+    name: "Abyssal",
+    dark: #1A1624,
+    shade: #73353E,
+    accent: #A9807E,
+    light: #FFF5E3
+  ),
+  spiral: (
+    name: "Spiral",
+    dark: #32344E,
+    shade: #7D7F8F,
+    accent: #A8A9B3,
+    light: #F4F4F5
+  ),
+  found-footage: (
+    name: "Found Footage",
+    dark: #241613,
+    shade: #726463,
+    accent: #9F918F,
+    light: #EEE0E0
+  ),
+  seaside: (
+    name: "Seaside",
+    dark: #4E8FBC,
+    shade: #91BAC0,
+    accent: #B6D3C2,
+    light: #FAFFC7
+  ),
+  retro-dark: (
+    name: "Retro (Dark)",
+    dark: #182005,
+    shade: #516710,
+    accent: #3C4D0C,
+    light: #769518
+  ),
+  retro-light: (
+    name: "Retro (Light)",
+    dark: #4F4F4F,
+    shade: #939264,
+    accent: #B9B770,
+    light: #FEFB86
+  ),
+  led: (
+    name: "LED",
+    dark: #1D1C28,
+    shade: #A3A2A7,
+    accent: #A3A2A7,
+    light: #F9F9F9
+  ),
+  uncanny-black: (
+    name: "Uncanny Black",
+    dark: #06050B,
+    shade: #91919D,
+    accent: #91919D,
+    light: #EBEBFB
+  ),
+  neo-80s: (
+    name: "Neo-80s",
+    dark: #1B0B32,
+    shade: #914DA2,
+    accent: #AF5DBE,
+    light: #DE78EB
+  ),
+  monolith: (
+    name: "Monolith",
+    dark: #202833,
+    shade: #6B2C2F,
+    accent: #962E2C,
+    light: #E23329
+  ),
+  casie: (
+    name: "Casie",
+    dark: #606780,
+    shade: #9A9CA6,
+    accent: #BCB9BB,
+    light: #F7EFE2
+  ),
+  flesh: (
+    name: "Flesh",
+    dark: #606780,
+    shade: #997C8F,
+    accent: #BA8998,
+    light: #F49FA8
+  ),
+  ripper: (
+    name: "Ripper",
+    dark: #291F22,
+    shade: #6A2544,
+    accent: #942A5B,
+    light: #FC3794
+  ),
+  archives: (
+    name: "Archives",
+    dark: #353434,
+    shade: #7C7969,
+    accent: #A5A186,
+    light: #EDE7BC
+  ),
+  shrouded: (
+    name: "Shrouded",
+    dark: #022930,
+    shade: #4A6124,
+    accent: #72811D,
+    light: #BBBA12
+  ),
+  alarm: (
+    name: "Alarm",
+    dark: #111111,
+    shade: #AC1F14,
+    accent: #AC1F14,
+    light: #D22315
+  ),
+  wood: (
+    name: "Wood",
+    dark: #6C4131,
+    shade: #AA806C,
+    accent: #BA907B,
+    light: #E7BDA5
+  ),
+  honey: (
+    name: "Honey",
+    dark: #4D3925,
+    shade: #8E6A3A,
+    accent: #9E7640,
+    light: #F4B75E
+  ),
+  jaguar: (
+    name: "Jaguar",
+    dark: #000000,
+    shade: #FF80FF,
+    accent: #55FFFF,
+    light: #FCFCFC
+  ),
+  hills: (
+    name: "Hills",
+    dark: #4E4943,
+    shade: #A49B91,
+    accent: #B9B0A5,
+    light: #D3C9BD
+  ),
+  film: (
+    name: "Film",
+    dark: #4E2515,
+    shade: #A0875B,
+    accent: #B4A06C,
+    light: #CDBE82
+  ),
+  mythos: (
+    name: "Mythos",
+    dark: #1C3527,
+    shade: #61503F,
+    accent: #9D7F6F,
+    light: #8CC1A5
+  ),
+  tides-i: (
+    name: "Tides I",
+    dark: #272034,
+    shade: #443C56,
+    accent: #584F6D,
+    light: #796E92
+  ),
+  tides-ii: (
+    name: "Tides II",
+    dark: #101119,
+    shade: #112844,
+    accent: #0B3264,
+    light: #6F88AC
+  ),
+  xnx: (
+    name: "XNX",
+    dark: #333F57,
+    shade: #6A849E,
+    accent: #8EB1CD,
+    light: #EEE8D8
+  ),
+  grimoire: (
+    name: "Grimoire",
+    dark: #140800,
+    shade: #3A2A1B,
+    accent: #766242,
+    light: #C0A36B
+  ),
+  clue: (
+    name: "Clue",
+    dark: #1C2A2D,
+    shade: #814733,
+    accent: #B1735C,
+    light: #F3EFEE
+  ),
+  shiba: (
+    name: "Shiba",
+    dark: #19140E,
+    shade: #8BA651,
+    accent: #DAAA76,
+    light: #FBFBF8
+  ),
+  seaweed: (
+    name: "Seaweed",
+    dark: #212322,
+    shade: #507870,
+    accent: #68998F,
+    light: #D3EEE9
+  ),
+  moldy-black: (
+    name: "Moldy Black",
+    dark: #010200,
+    shade: #2E3C3F,
+    accent: #839D9E,
+    light: #E4F1F7
+  ),
+  attic: (
+    name: "Attic",
+    dark: #464037,
+    shade: #636055,
+    accent: #98948A,
+    light: #C3BEA7
+  ),
+  kinda-black: (
+    name: "Kinda Black",
+    dark: #242831,
+    shade: #453B39,
+    accent: #C8C8BE,
+    light: #E6E9EE
+  ),
+  old-print: (
+    name: "Old Print",
+    dark: #11110F,
+    shade: #363834,
+    accent: #363834,
+    light: #90674E
+  ),
+  deep-gold: (
+    name: "Deep Gold",
+    dark: #383E36,
+    shade: #B29968,
+    accent: #FCD085,
+    light: #71B691
+  ),
+  omen: (
+    name: "Omen",
+    dark: #354159,
+    shade: #A3425A,
+    accent: #EA435B,
+    light: #F4C8A5
+  ),
+  neon-slasher: (
+    name: "Neon Slasher",
+    dark: #071012,
+    shade: #6E0B20,
+    accent: #D82552,
+    light: #3C7682
+  ),
+  gothic: (
+    name: "Gothic",
+    dark: #3F352D,
+    shade: #7B8779,
+    accent: #A83D33,
+    light: #B3AB98
+  ),
+  zr: (
+    name: "ZR",
+    dark: #000302,
+    shade: #F58F04,
+    accent: #FFD80A,
+    light: #3B4BBA
+  ),
+  faraday: (
+    name: "Faraday",
+    dark: #0E1316,
+    shade: #B2571B,
+    accent: #CC7D2B,
+    light: #96A692
+  ),
+  iron-rain: (
+    name: "Iron Rain",
+    dark: #250400,
+    shade: #534285,
+    accent: #985948,
+    light: #CD8062
+  ),
+  palm-trees: (
+    name: "Palm Trees",
+    dark: #196B61,
+    shade: #63A2C1,
+    accent: #279E91,
+    light: #EEA0DF
+  ),
+  blood-dawn: (
+    name: "Blood Dawn",
+    dark: #090E17,
+    shade: #CF4E52,
+    accent: #8C4049,
+    light: #5C676E
+  ),
+  samhaim: (
+    name: "Samhaim",
+    dark: #2D2729,
+    shade: #F553FE,
+    accent: #E73D5A,
+    light: #FF6F76
+  ),
+  riverside-incident: (
+    name: "Riverside Incident",
+    dark: #252622,
+    shade: #3D3C33,
+    accent: #6C5650,
+    light: #7E9DAE
+  ),
+  backrooms: (
+    name: "Backrooms",
+    dark: #2D2A31,
+    shade: #D1DCBE,
+    accent: #807241,
+    light: #CFDC8D
+  ),
+  mondo: (
+    name: "Mondo",
+    dark: #23261F,
+    shade: #555A44,
+    accent: #C34B33,
+    light: #FBDCA5
+  ),
+  blood-lord: (
+    name: "Blood Lord",
+    dark: #16110D,
+    shade: #5B120B,
+    accent: #393D3C,
+    light: #93261E
+  ),
+  skeletal-king: (
+    name: "Skeletal King",
+    dark: #040202,
+    shade: #434E5E,
+    accent: #7C9FB4,
+    light: #9AE1FD
+  ),
+  swamp-snarl: (
+    name: "Swamp Snarl",
+    dark: #2D2B19,
+    shade: #423E2E,
+    accent: #605C4B,
+    light: #A6944C
+  ),
+  faded-pumpkin: (
+    name: "Faded Pumpkin",
+    dark: #41262F,
+    shade: #4F3F3F,
+    accent: #7C5F5B,
+    light: #E1AD9D
+  ),
+  haircuts: (
+    name: "Haircuts",
+    dark: #37330F,
+    shade: #FFD400,
+    accent: #DF5308,
+    light: #22ACF8
+  ),
+  tarocco: (
+    name: "Tarocco",
+    dark: #1B262C,
+    shade: #0F4C81,
+    accent: #ED6663,
+    light: #FFA372
+  ),
+  gardener: (
+    name: "Gardener",
+    dark: #552244,
+    shade: #596157,
+    accent: #5B8C5A,
+    light: #CFD186
+  ),
+  seville: (
+    name: "Seville",
+    dark: #434E52,
+    shade: #5B8C85,
+    accent: #B0A160,
+    light: #ECCE6D
+  ),
+  watercolor: (
+    name: "Watercolor",
+    dark: #786B6C,
+    shade: #A4C5C6,
+    accent: #CD8D7B,
+    light: #FBC490
+  ),
+  leatherface: (
+    name: "Leatherface",
+    dark: #5D5B6A,
+    shade: #758184,
+    accent: #CFB495,
+    light: #F5CDAA
+  ),
+  caution-tape: (
+    name: "Caution Tape",
+    dark: #302F2B,
+    shade: #927300,
+    accent: #F1B806,
+    light: #FBE4BD
+  ),
+  cherry-candy: (
+    name: "Cherry Candy",
+    dark: #9B3D66,
+    shade: #FEA2B8,
+    accent: #F767A4,
+    light: #FAD3DD
+  ),
+  occultation: (
+    name: "Occultation",
+    dark: #514D5E,
+    shade: #FEAC84,
+    accent: #636A7D,
+    light: #F1625C
+  ),
+  cursed-slab: (
+    name: "Cursed Slab",
+    dark: #586685,
+    shade: #FEAC84,
+    accent: #AB795D,
+    light: #C7BAA8
+  ),
+  marsh: (
+    name: "Marsh",
+    dark: #3F5345,
+    shade: #6A8A73,
+    accent: #849C86,
+    light: #AB8D6A
+  ),
+  apple-pie: (
+    name: "Apple Pie",
+    dark: #5D5A5B,
+    shade: #FD9086,
+    accent: #75A2C5,
+    light: #FEFBFA
+  ),
+  fish: (
+    name: "Fish",
+    dark: #4B6339,
+    shade: #B7CFA9,
+    accent: #C4CAA4,
+    light: #EBF5EA
+  ),
+  copper: (
+    name: "Copper",
+    dark: #4D3E4D,
+    shade: #48916A,
+    accent: #A9624B,
+    light: #C6895F
+  ),
+  ciemna-czekolada: (
+    name: "Ciemna Czekolada",
+    dark: #010807,
+    shade: #3A3B35,
+    accent: #B47037,
+    light: #E3BC9A
+  ),
+  sweet-dreams: (
+    name: "Sweet Dreams",
+    dark: #526B6B,
+    shade: #9E8FB2,
+    accent: #A7ACD9,
+    light: #A8D1DE
+  ),
+  family-crypt: (
+    name: "Family Crypt",
+    dark: #3F4739,
+    shade: #717568,
+    accent: #F1BF98,
+    light: #E1F4CB
+  ),
+  empty-church: (
+    name: "Empty Church",
+    dark: #545E56,
+    shade: #917C78,
+    accent: #B79492,
+    light: #EAE1DF
+  ),
+  cotton-candy: (
+    name: "Cotton Candy",
+    dark: #666A86,
+    shade: #95B8D1,
+    accent: #EDAFB8,
+    light: #E8DDB5
+  ),
+  shelter: (
+    name: "Shelter",
+    dark: #795C5F,
+    shade: #A69658,
+    accent: #D9B26F,
+    light: #F2E29F
+  ),
+  199x: (
+    name: "199X",
+    dark: #585563,
+    shade: #745E63,
+    accent: #73937E,
+    light: #CEB992
+  ),
+  pal1: (
+    name: "PAL1",
+    dark: #565264,
+    shade: #A6808C,
+    accent: #CCB7AE,
+    light: #D6CFCB
+  ),
+  pal2: (
+    name: "PAL2",
+    dark: #2D2D2D,
+    shade: #563132,
+    accent: #766363,
+    light: #7D8D98
+  ),
+  thick-syrup: (
+    name: "Thick Syrup",
+    dark: #2D130B,
+    shade: #571B12,
+    accent: #853122,
+    light: #AF7552
+  ),
+  backstab: (
+    name: "Backstab",
+    dark: #1C221B,
+    shade: #6B2D12,
+    accent: #673F1F,
+    light: #776847
+  ),
+  cursed-cartridge: (
+    name: "Cursed Cartridge",
+    dark: #13292B,
+    shade: #8D2E11,
+    accent: #41553A,
+    light: #8C7740
+  ),
+  mortuary: (
+    name: "Mortuary",
+    dark: #2E1B38,
+    shade: #5F3C18,
+    accent: #9E7C51,
+    light: #848081
+  ),
+  crime-scene: (
+    name: "Crime Scene",
+    dark: #453A32,
+    shade: #876054,
+    accent: #8A5152,
+    light: #F8E3C8
+  ),
+  bad-weather: (
+    name: "Bad Weather",
+    dark: #332D1B,
+    shade: #767870,
+    accent: #8E614E,
+    light: #B6A181
+  ),
+);

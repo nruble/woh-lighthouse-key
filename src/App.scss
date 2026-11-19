@@ -1,0 +1,43 @@
+@use './styles/themes';
+
+main {
+  display: flex;
+  gap:16px;
+  width: 100%;
+  @media screen and (max-width:660px){
+    flex-direction:column;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+}
+main, header {
+  max-width: 1600px;
+  margin:0 auto;
+  @media screen and (max-width:660px){
+    
+  }
+}
+footer {
+  position: relative;
+  bottom:0;
+  z-index: 0;
+  color:theme-color(light);
+  font-size:13px;
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+  padding-block:24px;
+  flex-grow: 1;
+  justify-content: flex-end;
+  p {
+    margin:0;
+    background: theme-color(dark);
+    max-width:640px;
+  }
+  a, a:visited {
+    color:theme-color(light);
+    &:hover, &:active {
+      color:theme-color(accent);
+    }
+  }
+}

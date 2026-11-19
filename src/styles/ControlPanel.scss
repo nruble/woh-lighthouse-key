@@ -1,0 +1,270 @@
+.control-panel-container {
+  background-color: theme-color(light);
+  width:228px;
+  margin:0;
+  padding:0 0;
+  height:fit-content;
+  position: relative;
+  top:-64px;
+  left:0;
+  border-radius: 12px;
+  overflow: hidden;
+  display:flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  filter: 
+    drop-shadow(0 -2px 0 theme-color(light))
+    drop-shadow(0 2px 0 theme-color(light))
+    drop-shadow(-2px 0 0 theme-color(light))
+    drop-shadow(2px 0 0 theme-color(light))
+    ;
+  margin-bottom:-64px;
+  @media screen and (max-width:660px) {
+    width:100%;
+  }
+  .control-panel-gradient {
+    height:64px;
+    background: linear-gradient(theme-color(dark) 10%, theme-color(light) 90%);
+  }
+  .control-panel-inner-wrap {
+    padding:12px;
+    p {
+      font-size: 13px;
+      line-height: 1.15;
+      letter-spacing: -0.005em;
+    }
+    .control-panel-main {
+      margin-block:24px 0;
+      h1 {
+        font-weight:300;
+        font-size:18px;
+        line-height: 1;
+        letter-spacing: -0.005em;
+      }
+      .control-panel-glyph-grid {
+        display:grid;
+        gap:12px;
+        grid-template-columns: repeat(auto-fit, 60px);
+        grid-auto-rows: minmax(62px, 62px);
+        .control-panel-glyph-button {
+          padding:4px;
+          margin: 0;
+          background-color:theme-color(light);
+          border:2px solid theme-color(dark);
+          border-bottom-width:4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 6px;
+          overflow: hidden;
+          position: relative;
+          &:after {
+            content:'';
+            position:absolute;
+            height:60px;
+            width:60px;
+            inset:0;
+            background-color:transparent;
+            image-rendering: pixelated;
+          }
+          &:hover, &:focus {
+            cursor: pointer;
+            &:after {
+              background-color:theme-color(dark);
+              -webkit-mask: url('../assets/shading/gridshade_loose@3x.png') 2px 0 / 24px 24px repeat;
+              mask: url('../assets/shading/gridshade_loose@3x.png') 2px 0 / 24px 24px repeat;
+            }
+          }
+          .control-panel-glyph-img {
+            width:48px;
+            height:48px;
+            background-color: theme-color(dark);
+            image-rendering: pixelated;
+          }
+          &[data-selected="true"]{
+            border-bottom-width: 2px;
+            height:60px;
+            position: relative;
+            bottom:-2px;
+            &:after {
+              background-color:theme-color(dark);
+              -webkit-mask: url('../assets/shading/gridshade_tight@3x.png') top left / 24px 24px repeat;
+              mask: url('../assets/shading/gridshade_tight@3x.png') top left / 24px 24px repeat;
+            }
+          }
+          &[data-selected="true"]:hover, &[data-selected="true"]:focus{
+            &:after {
+              background-color:theme-color(dark);
+              -webkit-mask: 
+                url('../assets/shading/gridshade_tight@3x.png') top left / 24px 24px repeat,
+                url('../assets/shading/gridshade_loose@3x.png') 2px 0 / 24px 24px repeat;
+              mask: 
+                url('../assets/shading/gridshade_tight@3x.png') top left / 24px 24px repeat,
+                url('../assets/shading/gridshade_loose@3x.png') 2px 0 / 24px 24px repeat;
+            }
+          }
+        }
+      }
+
+    }
+    .control-panel-divider {
+      height:2px;
+      border:none;
+      background-color: theme-color(dark);
+      margin-block:24px 16px;
+    }
+
+    .control-panel-second {
+      display:flex;
+      flex-direction: column;
+      gap:16px;
+      p {
+        margin: 0;
+      }
+      .control-panel-select {
+        width:100%;
+        text-align: left;
+        background-color: theme-color(light);
+        border:2px solid theme-color(dark);
+        border-bottom-width: 4px;
+        border-radius: 6px;
+        font-size: 12px;
+        line-height: 1;
+        padding:9px 12px;
+        appearance: base-select;
+        &:open::picker-icon {
+          rotate: 180deg;
+        }
+        &:open::picker(select){
+          display:flex;
+        }
+        &:hover {
+          background: theme-color(light);
+          cursor: pointer;
+        }
+        selectedcontent {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        &::picker(select){
+          appearance: base-select;
+          border:2px solid theme-color(dark);
+          margin-block:5px;
+          width: 204px;
+          padding:5px 0;
+          flex-direction: column;
+          gap:0px;
+          background-color: theme-color(light);
+          color: theme-color(dark);
+        }
+        .control-panel-select-option {
+          padding:0;
+          margin: 0;
+          min-width: 0;
+          width: calc(100% - 24px);
+          display:block;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-size: 15px;
+          min-block-size:0;
+          padding:6px 12px;
+          &:disabled &:hover:disabled {
+            color:theme-color(shade);
+          }
+          &::checkmark, &:disabled::checkmark {
+            content:'';
+            display: none;
+          }
+          &:checked:not(:disabled) {
+            background-color: theme-color(dark);
+            color: theme-color(light);
+          }
+          &:hover:not(:disabled):not(:checked) {
+            background-color: theme-color(accent);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .control-panel-extras {
+      margin-top:22px;
+      .control-panel-reset-button {
+        color: theme-color(dark);
+        border:2px solid theme-color(dark);
+        border-bottom-width: 4px;
+        border-radius: 6px;
+        font-size:18px;
+        line-height: 1;
+        image-rendering: pixelated;
+        padding:6px 20px;
+        position: relative;
+        background-color: theme-color(light);
+        height:36px;
+        background-color: theme-color(shade);
+        &:before {
+          content:'';
+          position:absolute;
+          height:100%;
+          width:100%;
+          inset:0;
+          image-rendering: pixelated;
+          z-index: 0;
+        }
+        &:hover {
+          cursor: pointer;
+          &:before {
+            background-color:theme-color(dark);
+            -webkit-mask: url('../assets/shading/gridshade_loose@3x.png') 2px 0 / 24px 24px repeat;
+            mask: url('../assets/shading/gridshade_loose@3x.png') 2px 0 / 24px 24px repeat;
+          }
+        }
+        &:active {
+          border-bottom-width: 2px;
+          top:2px;
+          &:before {
+            background-color:theme-color(dark);
+            -webkit-mask: 
+              url('../assets/shading/gridshade_loose@3x.png') 2px 0 / 24px 24px repeat,
+              url('../assets/shading/gridshade_tight@3x.png') 0 0 / 24px 24px repeat;
+            mask: 
+              url('../assets/shading/gridshade_loose@3x.png') 2px 0 / 24px 24px repeat,
+              url('../assets/shading/gridshade_tight@3x.png') 0 0 / 24px 24px repeat;
+          }
+        }
+        span {
+          position: relative;
+          background-color: theme-color(light);
+          z-index: 1;
+          line-height: 1;
+          padding:0 2px;
+          display: block;
+        }
+      }
+      .control-panel-continue-button {
+        @extend .control-panel-reset-button;
+        display:none;
+        background-color: theme-color(accent);
+      }
+      @media screen and (max-width:660px) {
+        .control-panel-reset-button {
+          display:none;
+        }
+        .control-panel-continue-button {
+          display:block;
+        }
+      }
+    }
+    @media screen and (max-width:660px) {
+      &.collapse {
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        padding:0;
+      }
+      max-height:2000px;
+      visibility:visible;
+    }
+  }
+}

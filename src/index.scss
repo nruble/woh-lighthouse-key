@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'SilverPixel';
+  src: url('/fonts/Silver.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-size:19px;
+}
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+button, input, textarea, p, a, h1, h2, h3, h4, h5 {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display:flex;
+  min-height: 100vh;
+  background: theme-color(dark);
+  color:theme-color(dark);
+  position: relative;
+  margin:0;
+  &:before {
+    content:'';
+    position:absolute;
+    min-height:100vh;
+    inset:0;
+    background-color:transparent;
+    image-rendering: pixelated;
+    z-index: 0;
+    background-color: theme-color(light);
+    -webkit-mask: url('/images/background-foot.png') bottom right / 1024px 600px no-repeat;
+    mask: url('/images/background-foot.png') bottom right / 1024px 600px no-repeat;
+  }
+  @media screen and (max-width:1024px) {
+    &:before {
+      -webkit-mask: url('/images/background-foot.png') bottom center / 1024px 600px no-repeat;
+      mask: url('/images/background-foot.png') bottom center / 1024px 600px no-repeat;
+    }
+  }
+  #root {
+    padding:10px 16px 0;
+    margin:0 auto;
+    height:calc(100vh - 10px);
+    display:flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,169 @@
+.card-display-container {
+  padding-block:16px;
+  display:flex;
+  gap:10px;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-content:flex-start;
+  .glyph-card-container {
+    display: block;
+    position: relative;
+    width:384px;
+    min-height: 266px;
+    &:before {
+      content:'';
+      line-height: 0;
+      display: block;
+      position:absolute;
+      width:100%;
+      height: 266px;
+      background-color: theme-color(light);
+      -webkit-mask: url('/images/styling/card-placehold1@2x.png') center top / 100% 266px no-repeat;
+      mask: url('/images/styling/card-placehold1@2x.png') center top / 100% 266px no-repeat;
+      image-rendering: pixelated;
+    }
+    .card-1 {
+      display:flex;
+      flex-direction: column;
+      width:384px;
+      min-height:150px;
+      height: fit-content;
+      overflow: hidden;
+      image-rendering: pixelated;
+      flex-shrink: 0;
+      .card-1-head {
+        background-color: theme-color(light);
+        -webkit-mask: url('/images/styling/torn-paper-note-bg_01.png') top / 100% 8px no-repeat;
+        mask: url('/images/styling/torn-paper-note-bg_01.png') top / 100% 8px no-repeat;
+        height:8px;
+      }
+      .card-1-body {
+        flex-grow: 1;
+        background-color: theme-color(light);
+        -webkit-mask: url('/images/styling/torn-paper-note-bg_02.png') 100% / 100% 410px repeat;
+        mask: url('/images/styling/torn-paper-note-bg_02.png') 100% / 100% 410px repeat;
+        .card-1-body-inner {
+          padding: 18px 18px 36px;
+          font-size:14px;
+          h1 {
+            font-family: 'SilverPixel';
+            font-size:38px;
+            font-weight:normal;
+            line-height: 1;
+            margin: 0;
+          }
+          p {
+            line-height: 1.15;
+          }
+          .stat-note-block {
+            p {
+              margin-block:0;
+            }
+            ul {
+              margin:0;
+              padding-inline-start:24px;
+            }
+          }
+          .enemy-note, .mystery-note {
+            input {
+              font-family: "DM Sans", sans-serif;
+              width: 100%;
+              box-sizing: border-box;
+              padding: 9px 12px;
+              font-size:13px;
+              line-height: 1;
+              border:2px solid theme-color(dark);
+              color:theme-color(dark);
+              background-color: theme-color(light);
+              &::placeholder {
+                color:theme-color(shade);
+              }
+              &:focus-visible, &:focus {
+                outline:2px solid theme-color(accent);
+                outline:none;
+                box-shadow: 0 0 3px 1px theme-color(accent);
+              }
+            }
+          }
+        }
+      }
+      .card-1-foot {
+        background-color: theme-color(light);
+        -webkit-mask: url('/images/styling/torn-paper-note-bg_03.png') bottom / 100% 48px no-repeat;
+        mask: url('/images/styling/torn-paper-note-bg_03.png') bottom / 100% 48px no-repeat;
+        height:48px;
+      }
+    }
+  }
+  .full-settings-card-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:5px;
+    width:384px;
+    .card-2-placeholder {
+      width:384px;
+      height:164px;
+      background-color: theme-color(light);
+      -webkit-mask: url('/images/styling/card-placehold2@2x.png') center top / 100% 164px no-repeat;
+      mask: url('/images/styling/card-placehold2@2x.png') center top / 100% 164px no-repeat;
+      image-rendering: pixelated;
+      flex-shrink: 0;
+    }
+    .card-2 {
+      display:flex;
+      flex-direction: column;
+      width:384px;
+      min-height:150px;
+      height:fit-content;
+      background-color: theme-color(dark);
+      border-radius:12px;
+      overflow: hidden;
+      image-rendering: pixelated;
+      flex-shrink: 0;
+      .card-2-head {
+        background-color: theme-color(light);
+        -webkit-mask: url('/images/styling/rough-card-edges-bg_01.png') top / 100% 8px no-repeat;
+        mask: url('/images/styling/rough-card-edges-bg_01.png') top / 100% 8px no-repeat;
+        height:8px;
+      }
+      .card-2-body {
+        flex-grow: 1;
+        background-color: theme-color(light);
+        -webkit-mask: url('/images/styling/rough-card-edges-bg_02.png') 100% / 100% 634px repeat;
+        mask: url('/images/styling/rough-card-edges-bg_02.png') 100% / 100% 634px repeat;
+      }
+      .card-2-foot {
+        background-color: theme-color(light);
+        -webkit-mask: url('/images/styling/rough-card-edges-bg_03.png') bottom / 100% 8px no-repeat;
+        mask: url('/images/styling/rough-card-edges-bg_03.png') bottom / 100% 8px no-repeat;
+        height:8px;
+      }
+    }
+  }
+  @media screen and (max-width:660px) {
+    &:not(.show-for-mobile){
+      max-height:0;
+      overflow: hidden;
+      visibility: hidden;
+    }
+    padding-block:0;
+    max-height:2000px;
+    visibility:visible;
+    .glyph-card-container, .full-settings-card-container {
+      margin:0 auto;
+      flex-grow: 0;
+    }
+  }
+  @media screen and (max-width:416px) {
+    .glyph-card-container, .full-settings-card-container {
+      width:100%;
+      .card-1-placeholder, .card-2-placeholder, .card-1, .card-2 {
+        width:100%;
+      }
+    }
+  }
+}
